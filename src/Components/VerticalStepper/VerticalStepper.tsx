@@ -26,9 +26,7 @@ const VerticalStepper = () => {
               className={`stepper-circle ${index < activeStep ? "active" : ""}`}
             ></div>
             <div
-              className={`stepper-label ${
-                index < activeStep ? "active text-md font-normal" : ""
-              }`}
+              className={`stepper-label ${index < activeStep ? "active " : ""}`}
             >
               {step}
             </div>
