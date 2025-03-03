@@ -2,6 +2,7 @@ import { useState } from "react";
 import { OrderSummary } from "./Components/OrderSummary";
 import VerticalStepper from "./Components/VerticalStepper/VerticalStepper";
 import CreateRole from "./Components/CreateRole";
+import ProgressTracker from "./Components/ProgressTracker";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       /> */}
 
       {/* <VerticalStepper /> */}
-
-      <CreateRole />
+      {/*  */}
+      {/* <CreateRole /> */}
+      <ProgressTracker />
     </>
   );
 }
