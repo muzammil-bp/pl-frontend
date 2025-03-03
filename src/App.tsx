@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { OrderSummary } from "./Components/OrderSummary";
 import VerticalStepper from "./Components/VerticalStepper/VerticalStepper";
+import CreateRole from "./Components/CreateRole";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         deliveryMethod="Cash on Delivery"
       /> */}
 
-      <VerticalStepper />
+      {/* <VerticalStepper /> */}
+
+      <CreateRole />
     </>
   );
 }

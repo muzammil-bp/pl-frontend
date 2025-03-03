@@ -15,15 +15,17 @@ const steps = [
 ];
 
 const VerticalStepper = () => {
-  const [activeStep, setActiveStep] = useState(3);
-
+  const [activeStep, setActiveStep] = useState(1);
+  console.log(activeStep);
   return (
     <div className="stepper-container">
       <ul className="stepper">
         {steps.map((step, index) => (
           <li key={index} className="stepper-step">
             <div
-              className={`stepper-circle ${index < activeStep ? "active" : ""}`}
+              className={`stepper-circle ${
+                index < activeStep ? "active" : "!border-gray-400"
+              }`}
             ></div>
             <div
               className={`stepper-label ${index < activeStep ? "active " : ""}`}
